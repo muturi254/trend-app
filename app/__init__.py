@@ -10,7 +10,7 @@ auth = Blueprint('auth', __name__)
 bootstrap = Bootstrap()
 # creating the application
 def create_app(config_state):
-    # initializing the application
+    # initializing the application  
     app = Flask(__name__)
     app.config.from_object(config_options[config_state])
 
