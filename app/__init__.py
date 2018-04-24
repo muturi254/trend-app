@@ -4,13 +4,15 @@ from config import config_options
 from flask_bootstrap import Bootstrap
 from flask_sqlalchemy import SQLAlchemy
 from flask import Blueprint
+
 # initializing Blueprints
 auth = Blueprint('auth', __name__)
+
 # defining bootstrap
 bootstrap = Bootstrap()
 # creating the application
 def create_app(config_state):
-    # initializing the application  
+    # initializing the application
     app = Flask(__name__)
     app.config.from_object(config_options[config_state])
 
