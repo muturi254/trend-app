@@ -24,5 +24,3 @@ def create_app(config_state):
     app.register_blueprint(main_blueprint)
 
     return app
-
-from . import views
